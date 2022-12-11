@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Banking</title>
+    <!-- tailwind cdn  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="pt-5">
+        <h1 class="text-5xl text-center pt-6 font-semibold font-serif">Lets Start <span class="text-indigo-500">Hello Banking</span> Claculation Here</h1>
+    </header>
+    <main>
+        <!-- view section  -->
+        <section class="bg-gray-100 md:grid grid-cols-3 gap-4 w-3/4 mx-auto mt-10 p-10 rounded ">
+            <div class="bg-green-300 p-6 rounded-2xl my-3 ">
+                <h3 class="text-3xl text-center   font-serif">Deposit</h3>
+                <h2 class="text-4xl text-center font-semibold mt-5">$<span id="neet-deposite">00</span></h2>
+            </div>
+            <div class="bg-green-300 p-6 rounded-2xl my-3 ">
+                <h3 class="text-3xl text-center   font-serif">Withdraw</h3>
+                <h2 class="text-4xl text-center font-semibold mt-5">$<span id="widthdraw-money">00</span></h2>
+            </div>
+            <div class="bg-green-300 p-6 rounded-2xl my-3 ">
+                <h3 class="text-3xl text-center   font-serif">Balance</h3>
+                <h2 class="text-4xl text-center font-semibold mt-5">$<span id="total-balance">50</span></h2>
+            </div>
+        </section>
+
+        <!-- deposite and widthdraw section  -->
+        <section class="bg-yellow-300 sm:grid grid-cols-2 gap-4 my-10 w-3/4 mx-auto rounded p-10 mb-10">
+            <div class="my-3 bg-purple-200 rounded-2xl p-6 overflow-hidden">
+                <h4 class="text-2xl text-center font-serif font-semibold">Deposit Money Here</h4>
+                <input id="deposit-input" class="rounded border pl-2 block mt-3 sm:w-80 mx-auto py-3 " type="text" placeholder=" Enter amount ">
+                <button id="deposit-btn" class="rounded-xl border p-2 px-5 bg-indigo-700 text-white block mt-3  mx-auto">Deposit</button>
+            </div>
+            <div class="my-3 bg-purple-200 rounded-2xl p-6 overflow-hidden">
+                <h4 class="text-2xl text-center font-serif font-semibold">Withdraw Money Here</h4>
+                <input id="widthdraw-input" class="rounded border pl-2 block mt-3 sm:w-80 mx-auto py-3" type="text" placeholder=" Enter amount ">
+                <button id="widthdraw-btn" class="rounded-xl border p-2 px-5 bg-indigo-700 text-white block mt-3  mx-auto">Withdraw</button>
+            </div>
+        </section>
+
+    </main>
+    <script src="js/banking.js"></script>
+</body>
+
+</html>
